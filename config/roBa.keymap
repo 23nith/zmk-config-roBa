@@ -52,7 +52,7 @@
 
         combo_enter {
             timeout-ms = <50>;
-            key-positions = <20 28>;      // L + ;
+            key-positions = <20 21>;      // L + ;
             bindings = <&kp ENTER>;
         };
     };
