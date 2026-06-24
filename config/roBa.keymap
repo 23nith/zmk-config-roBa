@@ -135,7 +135,7 @@
         default_layer {
             bindings = <
 &kp Q         &kp W         &kp E         &kp R                           &kp T                                                  &kp Y                &lt 6 U     &lt 4 I    &kp O    &mt P DELETE
-&mt LCTRL A   &kp S         &kp D         &kp F                           &kp G      &esc_eisu                    &kp MINUS        &kp H                &kp J       &kp K      &kp L    &kp SQT
+&mt LCTRL A   &kp S         &kp D         &kp F                           &kp G      &esc_eisu                    &kp MINUS        &kp H                &kp J       &kp K      &kp L    &kp SEMICOLON
 &mt LSHIFT Z  &kp X         &kp C         &mt LALT V                      &lt 5 B    &kp COLON                    &mt RCTRL SEMICOLON  &kp N                &mt RALT M  &kp COMMA  &kp DOT  &mt RSHIFT SLASH
 &kp CAPS      &kp LEFT_ALT  &kp LEFT_GUI  &mt_exit_AML_on_tap LSHIFT TAB  &kp SPACE  &mt LA(LCTRL) LA(GRAVE)      &kp BACKSPACE    &kp SPACE                                            &kp DEL
             >;
