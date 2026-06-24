@@ -52,7 +52,7 @@
 
         combo_enter {
             timeout-ms = <50>;
-            key-positions = <20 21>;      // L + ;
+            key-positions = <20 21>;      // L + '
             bindings = <&kp ENTER>;
         };
     };
@@ -135,7 +135,7 @@
         default_layer {
             bindings = <
 &kp Q         &kp W         &kp E         &kp R                           &kp T                                                  &kp Y                &lt 6 U     &lt 4 I    &kp O    &kp P
-&mt LCTRL A   &kp S         &kp D         &kp F                           &kp G      &tog 7                       &kp MINUS        &kp H                &kp J       &kp K      &kp L    &kp SEMICOLON
+&mt LCTRL A   &kp S         &kp D         &kp F                           &kp G      &tog 7                       &kp MINUS        &kp H                &kp J       &kp K      &kp L    &mt LCTRL SQT
 &mt LSHIFT Z  &kp X         &kp C         &mt LALT V                      &lt 5 B    &mo 8                        &mt RCTRL SEMICOLON  &kp N                &mt RALT M  &kp COMMA  &kp DOT  &mt RSHIFT SLASH
 &kp CAPS      &exit_AML     &kp LEFT_GUI  &mo 4                           &kp SPACE  &mo 2                        &kp BACKSPACE    &kp SPACE                                            &kp DEL
             >;
@@ -209,7 +209,7 @@
         Symbol {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                  &trans  &kp LPAR  &kp RPAR  &kp MINUS  &kp EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LBKT  &kp RBKT  &kp GRAVE  &kp SQT
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LBKT  &kp RBKT  &kp GRAVE  &kp SEMICOLON
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                 &trans
             >;
