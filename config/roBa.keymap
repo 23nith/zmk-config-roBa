@@ -209,7 +209,7 @@
         Symbol {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                  &trans  &kp LPAR  &kp RPAR  &kp MINUS  &kp EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LBKT  &kp RBKT  &trans     &kp SQT
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LBKT  &kp RBKT  &kp GRAVE  &kp SQT
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                 &trans
             >;
