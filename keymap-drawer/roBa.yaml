@@ -401,5 +401,5 @@ combos:
   k: ESC
 - p: [8, 9]
   k: BACKSPACE
-- p: [20, 28]
+- p: [20, 21]
   k: ENTER
