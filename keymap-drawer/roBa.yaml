@@ -11,7 +11,7 @@ layers:
   - {t: I, h: SCROLL}
   - O
   - {t: DELETE, h: P}
-  - A
+  - {t: A, h: LCTRL}
   - S
   - D
   - F
@@ -23,26 +23,26 @@ layers:
   - K
   - L
   - ''''
-  - Z
+  - {t: Z, h: LSHIFT}
   - X
   - C
-  - V
+  - {t: V, h: LALT}
   - {t: B, h: BLUETOOTH}
   - ':'
-  - ;
+  - {t: ;, h: RCTRL}
   - N
-  - M
+  - {t: M, h: RALT}
   - ','
   - .
-  - /
-  - LCTRL
+  - {t: /, h: RSHIFT}
+  - CAPS
   - LEFT ALT
   - LEFT GUI
   - {t: '&kp_exit_AML TAB', h: LSHIFT}
-  - {t: SPACE, h: NUM}
+  - SPACE
   - {t: Alt+`, h: Alt+LCTRL}
   - BACKSPACE
-  - {t: ENTER, h: ARROW}
+  - SPACE
   - DEL
   NUM:
   - +
@@ -83,7 +83,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -130,7 +130,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   AUTO_MOUSE:
   - {t: ▽, type: trans}
@@ -308,3 +308,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [0, 1]
+  k: ESC
+- p: [8, 9]
+  k: BACKSPACE
+- p: [20, 28]
+  k: ENTER
