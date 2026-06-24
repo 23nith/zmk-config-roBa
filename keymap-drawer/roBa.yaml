@@ -22,7 +22,7 @@ layers:
   - J
   - K
   - L
-  - ;
+  - {t: '''', h: LCTRL}
   - {t: Z, h: LSHIFT}
   - X
   - C
@@ -374,7 +374,7 @@ layers:
   - '['
   - ']'
   - '`'
-  - ''''
+  - ;
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
