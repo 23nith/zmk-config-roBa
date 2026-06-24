@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - {t: A, h: LCTRL}
-  - S
+  - {t: S, h: LGUI}
   - D
   - F
   - G
@@ -21,7 +21,7 @@ layers:
   - H
   - J
   - K
-  - L
+  - {t: L, h: RGUI}
   - {t: '''', h: LCTRL}
   - {t: Z, h: LSHIFT}
   - X
@@ -376,7 +376,7 @@ layers:
   - '`'
   - ;
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -403,3 +403,5 @@ combos:
   k: BACKSPACE
 - p: [20, 21]
   k: ENTER
+- p: [10, 11]
+  k: TAB
