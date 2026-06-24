@@ -135,8 +135,8 @@
         default_layer {
             bindings = <
 &kp Q         &kp W         &kp E         &kp R                           &kp T                                                  &kp Y                &lt 6 U     &lt 4 I    &kp O    &mt P DELETE
-&mt LCTRL A   &kp S         &kp D         &kp F                           &kp G      &esc_eisu                    &kp MINUS        &kp H                &kp J       &kp K      &kp L    &kp SEMICOLON
-&mt LSHIFT Z  &kp X         &kp C         &mt LALT V                      &lt 5 B    &kp COLON                    &mt RCTRL SEMICOLON  &kp N                &mt RALT M  &kp COMMA  &kp DOT  &mt RSHIFT SLASH
+&mt LCTRL A   &kp S         &kp D         &kp F                           &kp G      &tog 7                       &kp MINUS        &kp H                &kp J       &kp K      &kp L    &kp SEMICOLON
+&mt LSHIFT Z  &kp X         &kp C         &mt LALT V                      &lt 5 B    &mo 8                        &mt RCTRL SEMICOLON  &kp N                &mt RALT M  &kp COMMA  &kp DOT  &mt RSHIFT SLASH
 &kp CAPS      &kp LEFT_ALT  &kp LEFT_GUI  &mt_exit_AML_on_tap LSHIFT TAB  &kp SPACE  &mt LA(LCTRL) LA(GRAVE)      &kp BACKSPACE    &kp SPACE                                            &kp DEL
             >;
         };
@@ -195,6 +195,24 @@
             >;
 
             sensor-bindings = <&inc_dec_kp K_VOLUME_UP C_VOLUME_DOWN>;
+        };
+
+        Num_Func {
+            bindings = <
+&kp N1  &kp N2  &kp N3  &kp N4  &kp N5                  &kp N6  &kp N7  &kp N8   &kp N9   &kp N0
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &tog 7  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                            &trans
+            >;
+        };
+
+        Symbol {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                  &trans  &kp LPAR  &kp RPAR  &kp MINUS  &kp EQUAL
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LBKT  &kp RBKT  &trans     &kp SQT
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                 &trans
+            >;
         };
     };
 };
