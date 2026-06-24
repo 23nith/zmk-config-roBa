@@ -10,7 +10,7 @@ layers:
   - {t: U, h: '6'}
   - {t: I, h: SCROLL}
   - O
-  - {t: DELETE, h: P}
+  - P
   - {t: A, h: LCTRL}
   - S
   - D
