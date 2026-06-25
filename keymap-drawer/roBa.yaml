@@ -32,7 +32,7 @@ layers:
   - {t: ;, h: RCTRL}
   - N
   - {t: M, h: RALT}
-  - ','
+  - {t: ',', h: '&num_cmd_alt'}
   - .
   - {t: /, h: RSHIFT}
   - CAPS
