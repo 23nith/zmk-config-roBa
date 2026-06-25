@@ -18,7 +18,7 @@ layers:
   - {t: G, h: LGUI}
   - {t: Numbers, h: toggle}
   - '-'
-  - {t: H, h: RGUI}
+  - {t: H, h: '&num_cmd_alt'}
   - J
   - K
   - L
@@ -32,7 +32,7 @@ layers:
   - {t: ;, h: RCTRL}
   - N
   - {t: M, h: RALT}
-  - {t: ',', h: '&num_cmd_alt'}
+  - ','
   - .
   - {t: /, h: RSHIFT}
   - CAPS
