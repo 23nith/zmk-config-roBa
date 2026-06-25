@@ -115,6 +115,28 @@
                 , <&macro_pause_for_release>
                 , <&macro_release &kp LGUI &kp LALT &mo 7>;
         };
+
+        // ホールド中: Left Alt を押しっぱなしにして Numbers層(7)を有効化、離すと解除
+        num_lalt: num_lalt {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            label = "NUM_LALT";
+            bindings
+                = <&macro_press &kp LALT &mo 7>
+                , <&macro_pause_for_release>
+                , <&macro_release &kp LALT &mo 7>;
+        };
+
+        // ホールド中: Right Alt を押しっぱなしにして Numbers層(7)を有効化、離すと解除
+        num_ralt: num_ralt {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            label = "NUM_RALT";
+            bindings
+                = <&macro_press &kp RALT &mo 7>
+                , <&macro_pause_for_release>
+                , <&macro_release &kp RALT &mo 7>;
+        };
     };
 
     behaviors {
@@ -164,6 +186,28 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
         };
+
+        // タップ: キー / ホールド: Numbers層 + Left Alt
+        ht_num_lalt: ht_num_lalt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_NUM_LALT";
+            bindings = <&num_lalt>, <&kp>;
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+        };
+
+        // タップ: キー / ホールド: Numbers層 + Right Alt
+        ht_num_ralt: ht_num_ralt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_NUM_RALT";
+            bindings = <&num_ralt>, <&kp>;
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+        };
     };
 
     keymap {
@@ -172,8 +216,8 @@
         default_layer {
             bindings = <
 &kp Q         &kp W         &kp E         &kp R                           &kp T                                                  &kp Y                &lt 6 U     &lt 4 I    &kp O    &kp P
-&mt LCTRL A   &kp S         &kp D         &kp F                           &mt LGUI G  &tog 7                       &kp MINUS        &ht_num_cmd_alt 0 H  &kp J       &kp K      &kp L         &mt LCTRL SQT
-&mt LSHIFT Z  &kp X         &kp C         &mt LALT V                      &lt 5 B    &td_sym_fn                   &mt RCTRL SEMICOLON  &kp N                &mt RALT M  &kp COMMA  &kp DOT  &mt RSHIFT SLASH
+&mt LCTRL A   &kp S         &kp D         &kp F                           &ht_num_cmd_alt 0 G  &tog 7                       &kp MINUS        &ht_num_cmd_alt 0 H  &kp J       &kp K      &kp L         &mt LCTRL SQT
+&mt LSHIFT Z  &mt LGUI X    &mt LALT C    &ht_num_lalt 0 V                &lt 5 B    &td_sym_fn                   &mt RCTRL SEMICOLON  &kp N                &ht_num_ralt 0 M  &mt RALT COMMA  &mt RGUI DOT  &mt RSHIFT SLASH
 &kp CAPS      &exit_AML     &kp LEFT_GUI  &mo 4                           &kp SPACE  &mo 2                        &kp BACKSPACE    &kp SPACE                                            &kp DEL
             >;
         };
