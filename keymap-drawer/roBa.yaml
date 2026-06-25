@@ -15,7 +15,7 @@ layers:
   - S
   - D
   - F
-  - {t: G, h: LGUI}
+  - {t: G, h: '&num_cmd_alt'}
   - {t: Numbers, h: toggle}
   - '-'
   - {t: H, h: '&num_cmd_alt'}
@@ -24,16 +24,16 @@ layers:
   - L
   - {t: '''', h: LCTRL}
   - {t: Z, h: LSHIFT}
-  - X
-  - C
-  - {t: V, h: LALT}
+  - {t: X, h: LGUI}
+  - {t: C, h: LALT}
+  - {t: V, h: '&num_lalt'}
   - {t: B, h: BLUETOOTH}
   - '&td_sym_fn'
   - {t: ;, h: RCTRL}
   - N
-  - {t: M, h: RALT}
-  - ','
-  - .
+  - {t: M, h: '&num_ralt'}
+  - {t: ',', h: RALT}
+  - {t: ., h: RGUI}
   - {t: /, h: RSHIFT}
   - CAPS
   - '&exit_AML'
